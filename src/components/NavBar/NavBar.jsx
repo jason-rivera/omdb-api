@@ -1,10 +1,11 @@
 import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import styles from './NavBar.module.css';
 
 const NavBar = () => {
   return(
-    <Navbar bg="light" expand={false}>
+    <Navbar bg="dark" expand={false}>
       <Container fluid>
-        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Brand href="#"></Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
@@ -12,7 +13,7 @@ const NavBar = () => {
           placement="end"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+            <Offcanvas.Title id="offcanvasNavbarLabel">Navigation</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">

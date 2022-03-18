@@ -2,6 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const server = express();
 const PORT = 8888;
+const axios = require('axios');
+
+
+const api_key = "53b099e7";
+const endPointUrl = "http://www.omdbapi.com/?";
+
 
 server.use(express.json());
 server.use((req, res, next) => {
@@ -15,8 +21,19 @@ server.get("/", (req, res) => {
   res.status(200).send("hi from nowhere land");
 })
 
-server.get("/movies", (req, res) => {
-  res.status(200).send("hi MOVIES");
+server.post("/movies", (req, res) => {
+  const title = req.body.title;
+  if (title === null || title === "") {
+    res.status(400).send();
+    return;
+  }
+
+  console.log(`${title} movie post request`)
+  axios.get(`http://www.omdbapi.com/?t=${title}&plot=full&apikey=${api_key}`)
+    .then(response => {
+      res.status(200).send(response.data);
+    })
+    .catch(error => console.error(error));
 })
 
 

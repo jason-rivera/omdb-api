@@ -1,0 +1,25 @@
+.moviesPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moviesContentContainer {
+  width: 600px;
+}
+
+.moviesInputContainer {
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.moviesTextInput {
+  margin-top: 40px;
+  width: 500px;
+}
+
+.searchMovieBtn {
+  margin: 10px 0px;
+  padding: 10px;
+}

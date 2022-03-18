@@ -4,7 +4,6 @@ import AboutPage from './views/About/AboutPage';
 import MoviePage from './views/Movie/MoviePage';
 import NavBar from './components/NavBar/NavBar'
 
-
 function App() {
   return (
     <BrowserRouter>
