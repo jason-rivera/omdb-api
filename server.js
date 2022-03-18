@@ -3,10 +3,14 @@ const bodyParser = require('body-parser');
 const server = express();
 const PORT = 8888;
 const axios = require('axios');
+const dotenv = require("dotenv");
+dotenv.config();
 
 
-const api_key = "53b099e7";
+const api_key = process.env.KEY;
 const endPointUrl = "http://www.omdbapi.com/?";
+
+console.log(api_key);
 
 
 server.use(express.json());
