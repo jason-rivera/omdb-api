@@ -1,0 +1,19 @@
+.offCanvasHeader {
+  background-color: #30363a;
+  color: white;
+}
+
+.offCanvasBody {
+  background-color: #30363a;
+  color: white;
+}
+
+.navLink  {
+  color: white;
+  transition: 0.3s all;
+}
+
+.navLink:visited {
+  color: white;
+}
+
