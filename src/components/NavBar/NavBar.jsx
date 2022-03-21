@@ -22,6 +22,7 @@ const NavBar = () => {
               <Nav.Link className={styles.navLink} as={Link} to="/">Home</Nav.Link>
               <Nav.Link className={styles.navLink} as={Link} to="/about">About</Nav.Link>
               <Nav.Link className={styles.navLink} as={Link} to="/movies">Movies</Nav.Link>
+              <Nav.Link className={styles.navLink} as={Link} to="/tweeter">Tweeter</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
